@@ -52,14 +52,14 @@ export default class Welcome extends Component {
     const { navigate } = this.props.navigation;
 
     /* Make a focus on the input */
-    const didFocusSubscription = this.props.navigation.addListener(
+    /*const didFocusSubscription = this.props.navigation.addListener(
       'didFocus',
       payload => {
         console.log('didFocus');
-        //this.inputActcode.autoFocus='true';
+
         didFocusSubscription.remove();
       }
-    );
+    );*/
 
     return (
       <Container>
