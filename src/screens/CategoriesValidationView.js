@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import { View, Image } from 'react-native';
 import { Text, Button, Container, Div } from '../styles/Theme';
+import { setCategory } from '../actions/actions';
+import { connect } from 'react-redux';
 
-export default class CategoriesValidation extends Component {
+class CategoriesValidation extends Component {
 
   static navigationOptions = {
     title: 'CATEGORIES'
@@ -13,7 +15,7 @@ export default class CategoriesValidation extends Component {
     return (
       <Container>
         <Div>
-          <Text>Great! You chose {"Selected_Category"}. Is that right the category?.</Text>
+          <Text>Great! You chose "{this.props.categorySelected}". Is that right the category?.</Text>
         </Div>
         <Div>
 
@@ -34,3 +36,19 @@ export default class CategoriesValidation extends Component {
     )
   }
 };
+
+const mapStateToProps = state => {
+  return {
+    categorySelected: state.opportunitiesConstructor.categorySelected
+  }
+}
+
+const mapDispatchToProps = dispatch => {
+  return {
+    setCategory(categorySelected){
+      dispatch(setCategory(categorySelected));
+    }
+  }
+}
+
+export default connect(mapStateToProps,mapDispatchToProps)(CategoriesValidation);

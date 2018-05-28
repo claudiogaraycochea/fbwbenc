@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import { View, Image } from 'react-native';
 import { Text, Button, Container, Div } from '../styles/Theme';
+import { setCategory } from '../actions/actions';
+import { connect } from 'react-redux';
 
-export default class Categories extends Component {
+class Categories extends Component {
 
   static navigationOptions = {
     title: 'CATEGORIES'
@@ -10,10 +12,9 @@ export default class Categories extends Component {
 
   state = {
     categories: [
-      //{'id': 1, 'name' : 'Technology / Telecom'},
       {'id': 1, 'name' : 'Facilities'},
       {'id': 2, 'name' : 'Real Estate'}
-    ],
+    ]
   }
 
   render() {
@@ -26,17 +27,26 @@ export default class Categories extends Component {
         </Div>
         <Div>
           {this.state.categories.map((data) => {
-            return (<Button key={data.id}>{data.name}</Button>);
+            return (<Button key={data.id} onPress={()=>{ this.props.setCategory(data.name); navigate('CategoriesValidation') }}>{data.name}</Button>);
           })}
-        </Div>
-        <Div>
-          <Button
-            outline
-            onPress={() => navigate('CategoriesValidation')}>
-            NEXT
-          </Button>
         </Div>
       </Container>
     )
   }
 };
+
+const mapStateToProps = state => {
+  return {
+    categorySelected: state.opportunitiesConstructor.categorySelected
+  }
+}
+
+const mapDispatchToProps = dispatch => {
+  return {
+    setCategory(categorySelected){
+      dispatch(setCategory(categorySelected));
+    }
+  }
+}
+
+export default connect(mapStateToProps,mapDispatchToProps)(Categories);
