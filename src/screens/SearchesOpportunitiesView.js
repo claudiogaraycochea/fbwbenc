@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { View, Image } from 'react-native';
 import { H1, Text, Button, Container, Div } from '../styles/Theme';
+import { connect } from 'react-redux';
 
-export default class HelpUs extends Component {
+class SearchesOpportunities extends Component {
 
   static navigationOptions = {
     title: 'OPPORTUNITIES'
@@ -10,6 +11,7 @@ export default class HelpUs extends Component {
 
   render() {
     const { navigate } = this.props.navigation;
+    console.log(JSON.stringify(this.props.opportunitiesConstructor));
     return (
       <Container>
         <Div>
@@ -31,3 +33,15 @@ export default class HelpUs extends Component {
     )
   }
 };
+
+const mapStateToProps = state => {
+  return {
+    opportunitiesConstructor: state.opportunitiesConstructor
+  }
+}
+
+const mapDispatchToProps = dispatch => {
+  return {}
+}
+
+export default connect(mapStateToProps,mapDispatchToProps)(SearchesOpportunities);

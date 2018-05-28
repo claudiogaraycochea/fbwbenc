@@ -21,6 +21,13 @@ export default function opportunitiesConstructor(state = initialState, action) {
         categories: action.categories
       };
 
+    case 'SET_LOCATE' :
+      return {
+        ...state,
+        locate: action.locate
+      };
+
+
     default:
       return state;
   }

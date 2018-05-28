@@ -21,4 +21,11 @@ const setCategories = categories => {
   };
 };
 
-export { setOpportunities, setCategory, setCategories };
+const setLocate = locate => {
+  return {
+    type: 'SET_LOCATE',
+    locate: locate
+  };
+};
+
+export { setOpportunities, setCategory, setCategories, setLocate };
