@@ -11,8 +11,9 @@ import SearchesOpportunities from '../screens/SearchesOpportunitiesView';
 import ThankYou from '../screens/ThankYouView';
 
 const Routes = {
-  Welcome: { screen: Welcome },
   Categories: { screen: Categories },
+  Welcome: { screen: Welcome },
+  //Categories: { screen: Categories },
   CategoriesValidation: { screen: CategoriesValidation },
   SubCategories: { screen: SubCategories },
   HelpUs: { screen: HelpUs },
