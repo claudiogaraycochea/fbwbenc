@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import { View, Image } from 'react-native';
 import { Text, Button, Container, Div, Input } from '../styles/Theme';
+import { setLocate } from '../actions/actions';
+import { connect } from 'react-redux';
 
-export default class LocateAnotherCity extends Component {
+class LocateAnotherCity extends Component {
   
   constructor(props) {
     super(props);
@@ -16,6 +18,15 @@ export default class LocateAnotherCity extends Component {
   static navigationOptions = {
     title: 'ANOTHER CITY'
   };
+
+  onLocateClick = (props) =>{
+    const data = {
+      Name: 'Locally',
+      AnotherCityName: this.state.anotherCityName,
+      AnotherCityZipCode: this.state.anotherCityZipCode
+    }
+    this.props.setLocate(data);
+  }
 
   render() {
     const { navigate } = this.props.navigation;
@@ -42,14 +53,8 @@ export default class LocateAnotherCity extends Component {
 
           <Button
             outline
-            onPress={() => navigate('SubCategories')}>
+            onPress={() => {this.onLocateClick(); navigate('SearchesOpportunities')}}>
             YES
-          </Button>
-
-          <Button
-            outline
-            onPress={() => navigate('Categories')}>
-            NO
           </Button>
 
         </Div>
@@ -57,3 +62,17 @@ export default class LocateAnotherCity extends Component {
     )
   }
 };
+
+const mapStateToProps = state => {
+  return {}
+}
+
+const mapDispatchToProps = dispatch => {
+  return {
+    setLocate(locate){
+      dispatch(setLocate(locate));
+    }
+  }
+}
+
+export default connect(mapStateToProps,mapDispatchToProps)(LocateAnotherCity);

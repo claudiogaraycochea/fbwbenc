@@ -1,12 +1,23 @@
 import React, { Component } from 'react';
 import { View, Image } from 'react-native';
 import { Text, Button, Container, Div, DivCenter } from '../styles/Theme';
+import { setLocate } from '../actions/actions';
+import { connect } from 'react-redux';
 
-export default class Locate extends Component {
+class Locate extends Component {
 
   static navigationOptions = {
     title: 'LOCATE'
   };
+
+  onLocateClick = (locateOption) =>{
+    const data = {
+      Name: locateOption,
+      AnotherCityName: '',
+      AnotherCityZipCode: ''
+    }
+    this.props.setLocate(data);
+  }
 
   render() {
     const { navigate } = this.props.navigation;
@@ -23,12 +34,12 @@ export default class Locate extends Component {
           </Button>
           <Button
             outline
-            onPress={() => navigate('SearchesOportunities')}>
+            onPress={() => {this.onLocateClick('Nationally');navigate('SearchesOpportunities');}}>
             NATIONALLY
           </Button>
           <Button
             outline
-            onPress={() => navigate('SearchesOportunities')}>
+            onPress={() => {this.onLocateClick('Globally');navigate('SearchesOpportunities');}}>
             GLOBALLY
           </Button>
         </Div>
@@ -36,3 +47,17 @@ export default class Locate extends Component {
     )
   }
 };
+
+const mapStateToProps = state => {
+  return {}
+}
+
+const mapDispatchToProps = dispatch => {
+  return {
+    setLocate(locate){
+      dispatch(setLocate(locate));
+    }
+  }
+}
+
+export default connect(mapStateToProps,mapDispatchToProps)(Locate);

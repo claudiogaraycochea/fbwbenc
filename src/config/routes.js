@@ -11,16 +11,15 @@ import SearchesOpportunities from '../screens/SearchesOpportunitiesView';
 import ThankYou from '../screens/ThankYouView';
 
 const Routes = {
-  Categories: { screen: Categories },
   Welcome: { screen: Welcome },
-  //Categories: { screen: Categories },
+  Categories: { screen: Categories },
   CategoriesValidation: { screen: CategoriesValidation },
   SubCategories: { screen: SubCategories },
   HelpUs: { screen: HelpUs },
   Locate: { screen: Locate },
   LocallySelected: { screen: LocallySelected },
   LocallyAnotherCity: { screen: LocallyAnotherCity },
-  SearchesOportunities: { screen: SearchesOpportunities },
+  SearchesOpportunities: { screen: SearchesOpportunities },
   ThankYou: { screen: ThankYou }
 }
 
