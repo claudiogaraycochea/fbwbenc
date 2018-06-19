@@ -1,0 +1,2 @@
+export const API_OPPORTUNITIES = "https://wbenc-prod.chatbot-ninja.net/";
+export const API_FORM = "https://developer.experientswap.com/APIv1/LeadInfo?apikey=CIFpoCOdrZWoRsglME60gKl4129XoTbQjdfIpjkNRC6GI41y0cfpAfNmOR28nQ__&actcode=8973309976570495&badgeid=6795";

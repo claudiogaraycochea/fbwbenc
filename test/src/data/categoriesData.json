@@ -1,0 +1,121 @@
+{
+  "CategoriesList" : {
+      "items" : [
+        {"id": 1, "name": "Energy & Utilities"},
+        {"id": 2, "name" : "HR & Financial Services" },
+        {"id": 3, "name" : "Logistics" },
+        {"id": 4, "name" : "Marketing" },
+        {"id": 5, "name" : "Operations" },
+        {"id": 6, "name" : "Professional Services" },
+        {"id": 7, "name" : "Real Estate & Facilities" },
+        {"id": 8, "name" : "Technology/Telecom" },
+        {"id": 9, "name" : "Travel & Events" }
+      ]
+    },
+  "SubCategoriesList" : {
+    "1" : {
+      "items" : [
+        { "id": 1, "range": "001", "name": "Electrical Power", "tax": "Energy & Utilities_Electrical Power" },
+        { "id": 2, "range": "002", "name": "Energy Credits", "tax": "Electrical Power_Energy Credits" },
+        { "id": 3, "range": "003", "name": "Energy Management", "tax": "Electrical Power_Energy Management" },
+        { "id": 4, "range": "004", "name": "Energy Production Fuel", "tax": "Electrical Power_Energy Production Fuel" },
+        { "id": 5, "range": "005", "name": "Other Utilities", "tax": "Electrical Power_Other Utilities" },
+        { "id": 6, "range": "006", "name": "Waste Management", "tax": "Electrical Power_Waste Management" }
+      ]
+    },
+    "2" : {
+      "items" : [
+        { "id" : 1, "range": "007", "name" : "401k and Stock Plan Administration", "tax": "HR & Financial Services_401k and Stock Plan Administration" },
+        { "id" : 2, "range": "008", "name" : "Background Screening", "tax": "HR & Financial Services_Background Screening" },
+        { "id" : 4, "range": "010", "name" : "Benefits Administration", "tax": "HR & Financial Services_Benefits Administration" },
+        { "id" : 6, "range": "012", "name" : "Health & Wellness Programs", "tax": "HR & Financial Services_Health & Wellness Programs" },
+        { "id" : 7, "range": "013", "name" : "Insurance", "tax": "HR & Financial Services_Insurance" },
+        { "id" : 9, "range": "015", "name" : "Other HR & Financial Services", "tax": "HR & Financial Services_Other HR & Financial Services" },
+        { "id" : 10, "range": "016", "name" : "Outplacement Services", "tax": "HR & Financial Services_Outplacement Services" },
+        { "id" : 12, "range": "018", "name" : "Recruiting", "tax": "HR & Financial Services_Recruiting" },
+        { "id" : 13, "range": "019", "name" : "Relocation", "tax": "HR & Financial Services_Relocation" },
+        { "id" : 16, "range": "022", "name" : "Temporary Personnel Services", "tax": "HR & Financial Services_Temporary Personnel Services" }
+      ]
+    },
+    "3" : {
+      "items" : [
+        { "id" : 1, "range": "023", "name" : "Customs Brokerage Service", "tax": "Logistics_Customs Brokerage Service" },
+        { "id" : 2, "range": "024", "name" : "Expedited Freight", "tax": "Logistics_Expedited Freight" },
+        { "id" : 3, "range": "025", "name" : "Freight", "tax": "Logistics_Freight" },
+        { "id" : 4, "range": "026", "name" : "Freight Forwarding", "tax": "Logistics_Freight Forwarding" },
+        { "id" : 5, "range": "027", "name" : "Other Logistics", "tax": "Logistics_Other Logistics" },
+        { "id" : 7, "range": "029", "name" : "Warehousing & Distribution", "tax": "Logistics_Warehousing & Distribution" }
+      ]
+    },
+    "4" : {
+      "items" : [
+        { "id" : 1, "range": "030", "name" : "Agency Services", "tax": "Marketing_Agency Services" },
+        { "id" : 2, "range": "031", "name" : "Creative", "tax": "Marketing_Creative" },
+        { "id" : 4, "range": "033", "name" : "Market Research", "tax": "Marketing_Market Research" },
+        { "id" : 5, "range": "034", "name" : "Media", "tax": "Marketing_Media" },
+        { "id" : 6, "range": "035", "name" : "Other Marketing Services", "tax": "Marketing_Other Marketing Services" },
+        { "id" : 7, "range": "036", "name" : "Production", "tax": "Marketing_Production" },
+        { "id" : 8, "range": "037", "name" : "Promotion", "tax": "Marketing_Promotion" },
+        { "id" : 9, "range": "038", "name" : "Websites", "tax": "Marketing_Websites" }
+      ]
+    },
+    "5" : {
+      "items" : [
+        { "id" : 1, "range": "038", "name" : "Commercial Payments", "tax": "Operations_Commercial Payments" },
+        { "id" : 2, "range": "040", "name" : "Manufacturing", "tax": "Operations_Manufacturing" },
+        { "id" : 3, "range": "041", "name" : "MRO", "tax": "Operations_MRO" },
+        { "id" : 4, "range": "042", "name" : "Packaging", "tax": "Operations_Packaging" },
+        { "id" : 5, "range": "043", "name" : "Technical Equipment", "tax": "Operations_Technical Equipment" },
+        { "id" : 6, "range": "044", "name" : "Technical Services", "tax": "Operations_Technical Services" }
+      ]
+    },
+    "6" : {
+      "items" : [
+        { "id" : 1, "range": "045", "name" : "Consulting", "tax": "Professional Services_Consulting" },
+        { "id" : 2, "range": "046", "name" : "Engineering Services", "tax": "Professional Services_Engineering Services" },
+        { "id" : 3, "range": "047", "name" : "Environmental & Energy Services", "tax": "Professional Services_Environmental & Energy Services" },
+        { "id" : 5, "range": "049", "name" : "Legal Services", "tax": "Professional Services_Legal Services" },
+        { "id" : 6, "range": "050", "name" : "Other Professional Services", "tax": "Professional Services_Other Professional Services" },
+        { "id" : 7, "range": "051", "name" : "Outsourced Operations", "tax": "Professional Services_Outsourced Operations" },
+        { "id" : 8, "range": "052", "name" : "Public Relations", "tax": "Professional Services_Public Relations" },
+        { "id" : 9, "range": "053", "name" : "Translation & Localization Services ", "tax": "Professional Services_Translation & Localization Services" }
+      ]
+    },
+    "7" : {
+      "items" : [
+        { "id" : 1, "range": "054", "name" : "Construction", "tax": "Real Estate & Facilities_Construction" },
+        { "id" : 2, "range": "055", "name" : "Facilities Services", "tax": "Real Estate & Facilities_Facilities Services" },
+        { "id" : 3, "range": "056", "name" : "Facilities Supplies", "tax": "Real Estate & Facilities_Facilities Supplies" },
+        { "id" : 4, "range": "057", "name" : "Food & Beverage", "tax": "Real Estate & Facilities_Food & Beverage" },
+        { "id" : 5, "range": "058", "name" : "Office Supplies", "tax": "Real Estate & Facilities_Office Supplies" },
+        { "id" : 6, "range": "059", "name" : "Real Estate Leased", "tax": "Real Estate & Facilities_Real Estate Leased" },
+        { "id" : 8, "range": "061", "name" : "Security", "tax": "Real Estate & Facilities_Security" },
+        { "id" : 9, "range": "062", "name" : "Transportation", "tax": "Real Estate & Facilities_Transportation" }
+      ]
+    },
+    "8" : {
+      "items" : [
+        { "id" : 1, "range": "063", "name" : "Audio, Video & Conferencing", "tax": "Technology/Telecom_Audio, Video & Conferencing" },
+        { "id" : 2, "range": "064", "name" : "Colocation", "tax": "Technology/Telecom_Colocation" },
+        { "id" : 3, "range": "065", "name" : "Components", "tax": "Technology/Telecom_Components" },
+        { "id" : 4, "range": "066", "name" : "Computer Hardware", "tax": "Technology/Telecom_Computer Hardware" },
+        { "id" : 5, "range": "067", "name" : "Connectivity & Bandwidth", "tax": "Technology/Telecom_Connectivity & Bandwidth" },
+        { "id" : 6, "range": "068", "name" : "IT Software & Support", "tax": "Technology/Telecom_IT Software & Support" },
+        { "id" : 7, "range": "069", "name" : "Network Hardware", "tax": "Technology/Telecom_Network Hardware" },
+        { "id" : 10, "range": "072", "name" : "Technical Support/Help Desk Services", "tax": "Technology/Telecom_Technical Support/Help Desk Services" },
+        { "id" : 11, "range": "073", "name" : "Telecom Equipment", "tax": "Technology/Telecom_Telecom Equipment" },
+        { "id" : 12, "range": "074", "name" : "Telecom Services", "tax": "Technology/Telecom_Telecom Services" }
+      ]
+    },
+    "9" : {
+      "items" : [
+        { "id" : 3, "range": "077", "name" : "Events", "tax": "Travel & Events_Events" },
+        { "id" : 4, "range": "078", "name" : "Food & Beverage", "tax": "Travel & Events_Food & Beverage" },
+        { "id" : 6, "range": "080", "name" : "Hotel", "tax": "Travel & Events_Hotel" },
+        { "id" : 7, "range": "081", "name" : "Other Travel", "tax": "Travel & Events_Other Travel" },
+        { "id" : 9, "range": "083", "name" : "Taxi /Limo /Rideshare", "tax": "Travel & Events_Taxi /Limo /Rideshare" },
+        { "id" : 11, "range": "085", "name" : "Travel Agency", "tax": "Travel & Events_Travel Agency" }
+      ]
+    }
+  }
+}
