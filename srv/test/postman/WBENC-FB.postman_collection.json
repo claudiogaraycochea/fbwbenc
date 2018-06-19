@@ -1,0 +1,101 @@
+{
+	"variables": [],
+	"info": {
+		"name": "WBENC-FB",
+		"_postman_id": "10ddf020-7020-92f5-5f6f-12c7dd368b1b",
+		"description": "WBENC-FACEBOOK",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/ingest-zipcodes",
+			"request": {
+				"url": "http://{{hostname}}:{{port}}/ingest-zipcodes",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/csv",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "data",
+							"description": "",
+							"type": "file",
+							"src": "Facebook Opportunities File - Facebook US Offices by MSA and Zipcode.csv",
+							"value": ""
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/ingest-opportunities",
+			"request": {
+				"url": "http://{{hostname}}:{{port}}/ingest-opportunities",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/csv",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "data",
+							"description": "",
+							"type": "file",
+							"src": "Facebook Opportunities File - FOR JASON TO COMPLETE.csv",
+							"value": ""
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/export-opportunities",
+			"request": {
+				"url": "http://{{hostname}}:{{port}}/export-opportunities",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/evaluate-opportunity",
+			"request": {
+				"url": "http://{{hostname}}:{{port}}/evaluate-opportunity",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"ConfirmationID\": \"6794\",\n\t\"FormFullName\": \"\",\n\t\"FormCompany\": \"\",\n\t\"FormAddress\": \"\",\n\t\"FormState\": \"CA\",\n\t\"Categories\": [{\n    \t\"Range\": \"62\",\n    \t\"TAX\": \"Real Estate & Facilities_Transportation\"\n\t},\n\t{\n    \t\"Range\": \"57\",\n    \t\"TAX\": \"Real Estate & Facilities_Food & Beverage\"\n\t},\n\t{\n\t    \"Range\": \"58\",\n    \t\"TAX\": \"Real Estate & Facilities_Office Supplies\"\n\t}],\n\t\"Opportunities\": true,\n\t\"OfficeData\": \"DC\",\n\t\"Locate\": {\n\t\t\"Name\": \"Locally\",\n\t\t\"AnotherCityName\": \"\",\n\t\t\"AnotherCityZipCode\": \"\"\n\t}\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

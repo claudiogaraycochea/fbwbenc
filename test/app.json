@@ -1,0 +1,13 @@
+{
+  "expo": {
+    "name": "FB WBenc",
+    "icon": "./logo.png",
+    "description": "Facebook WBenc",
+    "sdkVersion": "27.0.0",
+    "version": "1.0.2",
+    "orientation": "portrait",
+    "ios": {
+      "bundleIdentifier": "com.wbenc2.base"
+    }
+  }
+}
